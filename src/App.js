@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import "./App.scss";
 import { Notification, Section } from 'rbx';
+import Rotas from './routes';
 
 const App = () => (
     <div>
-        <Section>
-            <Notification color="success">
-                Javascript Notes!
-            </Notification>
-        </Section>
+        <Rotas/>
     </div>
 )
 
