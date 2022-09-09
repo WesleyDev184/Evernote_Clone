@@ -1,5 +1,7 @@
 @import "./custom_colors";
 
+
+
 nav.navbar {
     height: 70px;
     border-bottom: 1px solid black;
@@ -26,11 +28,15 @@ nav.navbar {
 }
 
 @media(max-width: 600px){
+
     nav.navbar {
         height: 70px;
         border-bottom: 1px solid black;
     
     .navbar-brand {
+        position: relative;
+        bottom: 5px;
+
         img {
             height: 40px;
             padding-bottom: 10px;
@@ -38,12 +44,14 @@ nav.navbar {
         }
 
         .navbar-burger, burger{
-            bottom: 15px;
+            bottom: 10px;
         }
     }
 
     .navbar-menu{
+        position: relative;
         height: 180px;
+        bottom: 30px;
 
         .button, is-white, has-text-danger{
             top: 0;
