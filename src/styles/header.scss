@@ -10,6 +10,19 @@ nav.navbar {
         margin-top:15px;
     }
 }
+.navbar-menu{
+    .button, is-white, has-text-danger{
+        top: 10px;
+    }
+
+    .register-nav{
+        left: 350px;
+    }
+
+    .login-nav{
+        left: 190px;
+    }
+}
 }
 
 @media(max-width: 600px){
@@ -23,9 +36,36 @@ nav.navbar {
             padding-bottom: 10px;
             margin-top: 0;
         }
-        .navbar-burger, navbar-burger, burger{
+
+        .navbar-burger, burger{
             bottom: 15px;
         }
-    } 
+    }
+
+    .navbar-menu{
+        height: 180px;
+
+        .button, is-white, has-text-danger{
+            top: 0;
+        }
+    
+        .register-nav{
+            width: 95px;
+            left: 0;
+            border: 1px solid $custom-purple;
+        }
+    
+        .login-nav{
+            left: 0px;
+            width: 95px;
+            background-color: $custom-purple;
+            color: white
+        }
+
+        .navbar-item{
+            bottom: 65px;
+            right: 55px;
+        }
+    }
 } 
 }

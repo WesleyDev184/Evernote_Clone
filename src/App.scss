@@ -7,6 +7,8 @@ $custom-colors: (
   "custom-purple-darker": ($custom-purple-darker)
 );
 
+$danger: $custom-purple;
+
 // Import Bulma styles
 @import "~bulma/bulma";
 
