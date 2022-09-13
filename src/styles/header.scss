@@ -1,6 +1,32 @@
 @import "./custom_colors";
 
 
+.navbar-logged{
+    background-color: $custom-purple;
+     .navbar-menu{
+        background-color: $custom-purple;
+    }
+
+    .drop{
+        position: relative;
+        bottom: 10px;
+        left: 250px;
+    }
+
+    .button{
+        width: 130px;
+    }
+
+    .logo{
+        position: relative;
+        right: 130px;
+    }
+
+    .drop-menu{
+        position: relative;
+        left: 60px;
+    }
+   }
 
 nav.navbar {
     height: 70px;
@@ -75,5 +101,20 @@ nav.navbar {
             right: 55px;
         }
     }
-} 
+    } 
+
+    .navbar-logged{
+            background-color: $custom-purple;
+        .navbar-menu{
+            background-color: $custom-purple;
+        }
+
+        .logo{
+            margin: 0;
+            height: 95px;
+            right: 0px;
+            top: -50px;
+            width: 130px;
+        }
+   }
 }
