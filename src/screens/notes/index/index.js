@@ -1,13 +1,18 @@
-import React, { Fragment } from 'react';
-import HeaderLogged from '../../../components/header_logged';
-import Notes from '../../../components/notes';
-import '../../../styles/notes.scss'
+import React, {Fragment, useState} from "react";
+import HeaderLogged from "../../../components/header_logged";
+import Notes from "../../../components/notes";
+import { Column } from "rbx";
 
-const NotesScreen = () => (
-  <Fragment>
-    <HeaderLogged/>
-    <Notes/>
-  </Fragment>
-);
+function NotesScreen(){
+    const [isOpen, setIsOpen] = useState(false)
+
+    return(
+        <Fragment>
+            <HeaderLogged setIsOpen={setIsOpen} />
+            <Notes isOpen={isOpen} setIsOpen={setIsOpen} />
+        </Fragment>
+    )
+};
+
 
 export default NotesScreen;

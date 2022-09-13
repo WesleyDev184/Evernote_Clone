@@ -1,44 +1,43 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import Header from "../../../components/header";
-import LogoImage from "../../../assets/images/logo.png";
 import { Column, Section, Title, Container, Card } from "rbx";
-import RegisterForm from "../../../components/auth/register_form";
-import "../../../styles/auth.scss";
+import { ColumnGroup } from "rbx/grid/columns/column-group";
+import logoImage from '../../../assets/images/logo.png';
+import '../../../styles/auth.scss';
+import RegisterForm from '../../../components/auth/register_form';
 
-const RegisterScreen = () => (
-  <div className="pg">
-    <Header />
-    <Section size="medium" className="auth">
-      <Container>
-        <Column.Group centered className="cols">
-          <Column size={3}>
-            <Card className="cardm">
-              <Card.Content>
-                <Section className="sec">
-                  <Column.Group centered>
-                    <Column size={12}>
-                      <img src={LogoImage} />
-                    </Column>
-                  </Column.Group>
 
-                  <Column.Group>
-                    <Column size={12}>
-                      <Title
-                        size={6}
-                        className="has-text-grey has-text-centered title">
-                        Your notes on the cloud
-                      </Title>
-                    </Column>
-                  </Column.Group>
-                  <RegisterForm/>
-                </Section>
-              </Card.Content>
-            </Card>
-          </Column>
-        </Column.Group>
-      </Container>
-    </Section>
-  </div>
+const RegisterScreen = ()=>(
+    <Fragment>
+        <Header/>
+        <Section className="auth" >
+            <Container>
+                <Column.Group centered>
+                        <Column size={4}>
+                            <Card>
+                                <Card.Content>
+                                    <Section>
+                                        <Column.Group centered>
+                                            <Column size={12}>
+                                                <img src={logoImage} />
+                                            </Column>
+                                        </Column.Group>
+                                        <Column.Group>
+                                            <Column size={12}>
+                                                <Title size={6} className='has-text-gray has-text-cetered' subtitle>
+                                                    Suas notas na núvem
+                                                </Title>
+                                            </Column>
+                                        </Column.Group>
+                                        <RegisterForm/>
+                                    </Section>
+                                </Card.Content>
+                            </Card>
+                        </Column>
+                </Column.Group>
+            </Container>
+        </Section>
+    </Fragment>
 );
 
 export default RegisterScreen;

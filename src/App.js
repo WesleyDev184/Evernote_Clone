@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
-import "./App.scss";
 import { Notification, Section } from 'rbx';
-import Rotas from './routes';
+import './App.scss';
+import  Routes from './routes';
 
 const App = () => (
-    <div>
-        <Rotas/>
-    </div>
+  <Fragment>
+    <Routes/>
+  </Fragment>
+  
 )
 
 export default App;
