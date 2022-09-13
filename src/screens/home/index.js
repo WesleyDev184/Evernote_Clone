@@ -6,7 +6,7 @@ import "../../styles/home.scss";
 import { Link } from 'react-router-dom';
 
 const HomeScreen = () => (
-  <Fragment>
+  <div className='pg'>
     <Header/>
     <Section size="medium" className="home">
         <Container>
@@ -24,12 +24,12 @@ const HomeScreen = () => (
                     </Link>
                 </Column>
                 <Column size={6} offset={1}>
-                    <img src={PresentationImage} />
+                    <img src={PresentationImage} className='presentation'/>
                 </Column>
             </Column.Group>
         </Container>
     </Section>
-  </Fragment>
+  </div>
 )
 
 export default HomeScreen;

@@ -1,0 +1,72 @@
+@import "./custom_colors";
+
+.pg{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.auth{
+  background-color: $custom-purple;
+  height: 645px;  
+}
+.cardm{
+    bottom: 100px;
+    height: 550px;
+}
+.card-login{
+    height: 450px;
+    bottom: 100px;
+}
+.ctr{
+    bottom: 45px;
+}
+.campo{
+    height: 45px;
+}
+form{
+    position: relative;
+    bottom: 80px;
+    height: 300px;
+}
+.btn{
+    height: 40px;
+    bottom: 75px;
+}
+.btn-login-l{
+    width: 85px;
+}
+.help{
+    position: relative;
+    bottom: 360px;
+    color: red;
+}
+
+@media(max-width: 600px){
+    .auth{
+        height: 845px;
+    }
+    .cardm{
+        top: 50px;
+    }
+    .card-login{
+        top: 50px;
+        height: 500px;
+    }
+    .btn-login{
+        bottom: 60px;
+        right: 90px;
+    }
+    .btn-login-l{
+        bottom: 145px;
+        left: 60px;
+    }
+    .btn-register{
+        bottom: 145px;
+        left: 60px;
+    }
+    .help{
+        position: relative;
+        bottom: 320px;
+        color: red;
+    }
+}
